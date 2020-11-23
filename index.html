@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Checkout</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <h1><center>Checkout</center></h1>
+    <hr/>
+    <p>
+      Shampoo 1 bottle $8
+      <input type="number" length="8" min="0" id="shampoo"/>
+    </p> 
+    <p>
+      Handsoap 1 bottle $3. 
+      <input type="number" length="8" min="0" id="handsoap"/>
+    </p>
+    <p>
+      Paper towel 1 bottle $12. 
+      <input type="number" length="8" min="0" id="papertowel"/>
+    </p>
+    <p>
+      Conditioner 1 bottle $6. 
+      <input type="number" length="8" min="0" id="conditioner"/>
+    </p>
+    <p>
+      Sales tax (in %):
+      <input type="number" length="8" min="0" value="8" readonly/>
+    </p>
+    <br/>
+    <p>
+    <button id="calculate">Calculate Total Cost</button>
+    <label id="total"></label>
+    </p>
+    <script src="script.js"></script>
+  </body>
+</html>
