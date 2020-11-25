@@ -9,20 +9,25 @@ var handsoapPrice = 3
 var papertowelPrice = 12
 var conditionerPrice = 6
 
-var salesTax = 8
+//var salesTax = document.getElementById("tax").value
 
 function calculateTotalPrice() {
   var shampooQuantity = document.getElementById("shampoo").value
   var handsoapQuantity = document.getElementById("handsoap").value
   var papertowelQuantity = document.getElementById("papertowel").value
   var conditionerQuantity = document.getElementById("conditioner").value
-
+  var salesTax = document.getElementById("tax").value
+  if (salesTax < 0 || salesTax > 100) {
+    alert("Sales tax value is invalid")
+    return("")
+  }
   var priceBeforeTax = (shampooPrice * shampooQuantity) + (handsoapPrice * handsoapQuantity) + (papertowelPrice * papertowelQuantity) + (conditionerPrice * conditionerQuantity) 
   //total = salesTax/100 + total 
   var tax = salesTax/100 * priceBeforeTax
   var total = priceBeforeTax + tax
   document.getElementById("total").textContent = total
   return(total)
+  
 }
 
 //var x = calculateTotalPrice()
