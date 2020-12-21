@@ -17,9 +17,13 @@ function calculateTotalPrice() {
   var papertowelQuantity = document.getElementById("papertowel").value
   var conditionerQuantity = document.getElementById("conditioner").value
   var salesTax = document.getElementById("tax").value
+  var discountCode = document.getElementById("discount")
   if (salesTax < 0 || salesTax > 100) {
     alert("Sales tax value is invalid")
     return("")
+  }
+  if (discountCode == "HOLIDAY") {
+    var discountCode = priceBeforeTax / 10
   }
   var priceBeforeTax = (shampooPrice * shampooQuantity) + (handsoapPrice * handsoapQuantity) + (papertowelPrice * papertowelQuantity) + (conditionerPrice * conditionerQuantity) 
   //total = salesTax/100 + total 

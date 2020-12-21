@@ -1,9 +1,13 @@
 input {
-  position: relative;
-  float: right;
+  width: 100px;
 }
 
-label {
+/*label {
   position: relative;
   float: right;
+}*/
+
+img {
+  width: 100px;
+  height: 100px;
 }
