@@ -11,3 +11,11 @@ img {
   width: 100px;
   height: 100px;
 }
+
+.price {
+  text-align: right;
+}
+
+.cost {
+  text-align: right;
+}

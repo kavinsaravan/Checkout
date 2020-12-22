@@ -18,7 +18,7 @@
       <div class="col-md-6">
         Shampoo 1 bottle
       </div>
-      <div class="col-md-2">
+      <div class="col-md-2 price">
         $8
       </div>
       <div class="col-md-2">
@@ -32,7 +32,7 @@
       <div class="col-md-6">
         Handsoap 1 bottle 
       </div>
-      <div class="col-md-2">
+      <div class="col-md-2 price">
         $3
       </div>
       <div class="col-md-2">
@@ -46,7 +46,7 @@
       <div class="col-md-6">
         Paper towel 1 bottle  
       </div>
-      <div class="col-md-2">
+      <div class="col-md-2 price">
         $12
       </div>
       <div class="col-md-2">
@@ -60,7 +60,7 @@
       <div class="col-md-6">
         Conditioner 1 bottle  
       </div>
-      <div class="col-md-2">
+      <div class="col-md-2 price">
         $6
       </div>
       <div class="col-md-2">
@@ -68,16 +68,29 @@
       </div>
     </div>
     <div class="row p-2">
-      Sales tax (in %):
-      <input type="number" length="8" min="0" max="100" id="tax"/>
+      <div class="offset-md-7 col-md-3">
+        Sales tax (in %)
+      </div>
+      <div class="col-md-2">
+        <input type="number" length="8" min="0" max="100" id="tax"/>
+      </div>
     </div>
     <div class="row p-2">
-      Discount code 
-      <input type="text" length="8" min="0" id="discount"/>  
+      <div class="offset-md-7 col-md-3">
+        Discount code
+      </div>
+      <div class="col-md-2"> 
+        <input type="text" length="8" min="0" id="discount"/>  
+      </div>
     </div>
-    <div class="row">
-    <button id="calculate" class="btn btn-primary">Calculate Total Cost</button>
-    <label id="total"></label>
+    <div class="row p-2">
+      <div class="col-md-4">
+        <button id="calculate" class="btn btn-primary">Calculate Total Cost</button>
+      </div>
+      <div class="offset-md-6 col-md-2 cost" >
+        <label id="total"></label>
+      </div>
+    </label>
     </div>
     </div>
     <script src="script.js"></script>
